@@ -6,14 +6,21 @@
   /* outline: 1px solid red !important; */
 }
 
-input, button, textarea, select {
-    font: inherit;
-  }
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
 
-img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
 
 @font-face {
   font-family: GtCinetypeMono;
@@ -46,8 +53,14 @@ img, picture, video, canvas, svg {
   --fs-400: 14px;
   --fs-300: 12px;
 
+  /* --fc-fore: var(--color-foreground);
+  --fc-back: var(--color-background);
+  --fc-fore-alt: var(--color-fore-alt);
+  --fc-back-alt: var(--color-back-alt); */
+
   font-size: 12px;
   max-width: 100%;
+  
 }
 
 #splash {
@@ -63,29 +76,31 @@ img, picture, video, canvas, svg {
 }
 
 #mission {
-  --color-background: var(--color-white);
-  --color-foreground: var(--color-coal);
-  --color-back-alt: var(--color-lime);
+    --color-background: var(--color-white);
+    --color-foreground: var(--color-coal);
+    --color-back-alt: var(--color-lime);
 }
 
 #our-call {
-  --color-background: var(--color-mint);
-  --color-foreground: var(--color-black);
+    --color-background: var(--color-mint);
+    --color-foreground: var(--color-black);
 }
 
 #benefits {
-  --color-background: var(--color-black);
-  --color-foreground: var(--color-mint);
+    --color-background: var(--color-black);
+    --color-foreground: var(--color-mint);
 }
 
 #vision {
-  --color-background: var(--color-white);
-  --color-foreground: var(--color-black);
+    --color-background: var(--color-white);
+    --color-foreground: var(--color-black);
 }
 
 #program {
-  --color-background: var(--color-black);
-  --color-foreground: var(--color-mint);
+    --color-background: var(--color-black);
+    --color-foreground: var(--color-green);
+    --color-fore-alt: var(--color-mint);
+    --color-back-alt: var(--color-grey);
 }
 
 #testimonals {
@@ -121,6 +136,7 @@ body > section {
   padding: 32px;
   background-color: var(--color-background);
   color: var(--color-foreground);
+  padding: 32px;
 }
 
 section header {
@@ -170,7 +186,10 @@ section h1 {
 .flex {
   display: flex;
   flex-wrap: wrap;
-  margin: 0.5em;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+  gap: 0.5em;
 }
 
 .row {
@@ -198,4 +217,20 @@ section h1 {
 }
 .fs400 {
   font-size: var(--fs-400);
+}
+
+.fc-fore {
+  color: var(--color-foreground);
+}
+
+.fc-fore-alt {
+  color: var(--color-fore-alt);
+}
+
+.bg-back {
+  background-color: var(--color-background);
+}
+
+.bg-back-alt {
+  background-color: var(--color-back-alt);
 }
