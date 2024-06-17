@@ -1,7 +1,25 @@
+@font-face {
+  font-family: GtCinetypeMono;
+  src: url(fonts/GT-Cinetype-Mono.woff2);
+}
+
+@font-face {
+  font-family: GtCinetypeBold;
+  src: url(fonts/GT-Cinetype-Bold.woff2);
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  line-height: 1;
 
   /* outline: 1px solid red !important; */
 }
@@ -22,16 +40,6 @@ svg {
   max-width: 100%;
 }
 
-@font-face {
-  font-family: GtCinetypeMono;
-  src: url(fonts/GT-Cinetype-Mono.woff2);
-}
-
-@font-face {
-  font-family: GtCinetypeBold;
-  src: url(fonts/GT-Cinetype-Bold.woff2);
-}
-
 :root {
   --color-white: #ebece7;
   --color-black: #131612;
@@ -41,6 +49,7 @@ svg {
   --color-mint: #d7ffd7;
   --color-green: #49f259;
   --color-lime: #c6ffa0;
+  --color-army: #708270;
 
   --font-cinetype-mono: "GtCinetypeMono";
   --font-cinetype-bold: "GtCinetypeBold";
@@ -53,69 +62,72 @@ svg {
   --fs-400: 14px;
   --fs-300: 12px;
 
-  /* --fc-fore: var(--color-foreground);
-  --fc-back: var(--color-background);
-  --fc-fore-alt: var(--color-fore-alt);
-  --fc-back-alt: var(--color-back-alt); */
+  /* --fc-fore: var(--color-fore-0);
+  --fc-back: var(--color-back-0);
+  --fc-fore-1: var(--color-fore-1);
+  --fc-back-1: var(--color-back-alt); */
 
   font-size: 12px;
   max-width: 100%;
-  
 }
 
 #splash {
-  --color-background: var(--color-white);
-  --color-foreground: var(--color-olive);
+  --color-back-0: var(--color-white);
+  --color-fore-0: var(--color-olive);
 }
 
 #at-glance {
-  --color-background: var(--color-black);
-  --color-foreground: var(--color-green);
+  --color-back-0: var(--color-black);
+  --color-fore-0: var(--color-green);
   --color-back-alt: var(--color-grey);
-  --color-fore-alt: var(--color-green);
+  --color-fore-1: var(--color-green);
 }
 
 #mission {
-    --color-background: var(--color-white);
-    --color-foreground: var(--color-coal);
-    --color-back-alt: var(--color-lime);
+  --color-back-0: var(--color-white);
+  --color-fore-0: var(--color-coal);
+  --color-back-alt: var(--color-lime);
 }
 
 #our-call {
-    --color-background: var(--color-mint);
-    --color-foreground: var(--color-black);
+  --color-back-0: var(--color-mint);
+  --color-fore-0: var(--color-black);
 }
 
 #benefits {
-    --color-background: var(--color-black);
-    --color-foreground: var(--color-mint);
+  --color-back-0: var(--color-black);
+  --color-fore-0: var(--color-green);
+  --color-back-1: var(--color-grey);
+  --color-fore-1: var(--color-mint);
+  --color-fore-2: var(--color-white);
+  --color-fore-3: var(--color-army);
 }
 
 #vision {
-    --color-background: var(--color-white);
-    --color-foreground: var(--color-black);
+  --color-back-0: var(--color-white);
+  --color-fore-0: var(--color-black);
 }
 
 #program {
-    --color-background: var(--color-black);
-    --color-foreground: var(--color-green);
-    --color-fore-alt: var(--color-mint);
-    --color-back-alt: var(--color-grey);
+  --color-back-0: var(--color-black);
+  --color-fore-0: var(--color-green);
+  --color-fore-1: var(--color-mint);
+  --color-back-alt: var(--color-grey);
 }
 
 #testimonals {
-  --color-background: var(--color-white);
-  --color-foreground: var(--color-olive);
+  --color-back-0: var(--color-white);
+  --color-fore-0: var(--color-olive);
 }
 
 #application {
-  --color-background: var(--color-mint);
-  --color-foreground: var(--color-olive);
+  --color-back-0: var(--color-mint);
+  --color-fore-0: var(--color-olive);
 }
 
 #contact {
-  --color-background: var(--color-mint);
-  --color-foreground: var(--color-olive);
+  --color-back-0: var(--color-mint);
+  --color-fore-0: var(--color-olive);
 }
 
 body {
@@ -134,9 +146,9 @@ body > section {
   align-items: center;
   justify-content: center;
   padding: 32px;
-  background-color: var(--color-background);
-  color: var(--color-foreground);
-  padding: 32px;
+  background-color: var(--color-back-0);
+  color: var(--color-fore-0);
+  padding: 86px 64px;
 }
 
 section header {
@@ -147,7 +159,7 @@ section header {
 
 section h1 {
   padding: 4px;
-  outline: var(--color-foreground) solid 1px;
+  outline: var(--color-fore-0) solid 1px;
   font-size: 12px;
   font-weight: 900;
   width: fit-content;
@@ -167,7 +179,7 @@ section h1 {
 #at-glance .box {
   padding: 0.5em;
   background-color: var(--color-back-alt);
-  color: var(--color-fore-alt);
+  color: var(--color-fore-1);
   font-size: 16px;
 }
 
@@ -200,6 +212,16 @@ section h1 {
   flex-direction: column;
 }
 
+.center {
+  text-align: center;
+}
+
+.start {
+  text-align: start;
+  justify-content: start;
+  align-items: start;
+}
+
 .fs900 {
   font-size: var(--fs-900);
 }
@@ -219,18 +241,66 @@ section h1 {
   font-size: var(--fs-400);
 }
 
-.fc-fore {
-  color: var(--color-foreground);
+.fc-fore-0 {
+  color: var(--color-fore-0);
 }
 
-.fc-fore-alt {
-  color: var(--color-fore-alt);
+.fc-fore-1 {
+  color: var(--color-fore-1);
 }
 
-.bg-back {
-  background-color: var(--color-background);
+.fc-fore-2 {
+  color: var(--color-fore-2);
 }
 
-.bg-back-alt {
-  background-color: var(--color-back-alt);
+.fc-fore-3 {
+  color: var(--color-fore-3);
+}
+
+.bg-back-0 {
+  background-color: var(--color-back-0);
+}
+
+.bg-back-1 {
+  background-color: var(--color-back-1);
+}
+
+.bg-back-2 {
+  background-color: var(--color-back-2);
+}
+
+.ff-mono {
+  font-family: var(--font-cinetype-mono);
+}
+
+.ff-bold {
+  font-family: var(--font-cinetype-bold);
+}
+
+#benefits .boxes {
+    gap: 1em;
+    align-items: stretch;
+}
+
+#benefits .box {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 1em;
+  background-color: var(--color-back-1);
+  align-items: start;
+  max-width: 30ch;
+}
+
+#benefits .circle {
+  padding: 8px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--fs-700);
+  background-color: var(--color-back-0);
+  color: var(--color-fore-2);
 }
