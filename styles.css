@@ -292,6 +292,7 @@ section h1 {
   background-color: var(--color-back-1);
   align-items: start;
   max-width: 30ch;
+  border-radius: 4px;
 }
 
 #benefits .circle {
