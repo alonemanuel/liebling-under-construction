@@ -357,5 +357,66 @@ section h1 {
 }
 
 #program .area .info {
-    max-width: 12ch;
+  max-width: 12ch;
+}
+
+#program .out-windows {
+  outline: 1px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: var(--color-fore-1);
+  pad: 1em;
+}
+
+#program .windows {
+  display: flex;
+  flex-direction: row;
+  color: var(--color-fore-1);
+  gap: 1em;
+  padding: 1.5em;
+}
+
+#program .window {
+  display: flex;
+  outline: 1px solid;
+  width: 93px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+#our-call .infos {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+
+#our-call .info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  gap: 5em;
+}
+
+.big-gap {
+  gap: 86px;
+}
+
+#our-call .bullets {
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+}
+
+#our-call .bullet {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2em;
 }
