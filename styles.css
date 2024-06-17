@@ -150,7 +150,7 @@ svg {
 }
 
 #contact {
-  --color-back-0: var(--color-mint);
+  --color-back-0: var(--color-white);
   --color-fore-0: var(--color-olive);
 }
 
@@ -423,6 +423,10 @@ section h1 {
   gap: 86px;
 }
 
+.mid-gap {
+  gap: 32px;
+}
+
 #our-call .bullets {
   display: flex;
   flex-direction: row;
@@ -465,4 +469,18 @@ button {
 
 .w60 {
   max-width: 60ch;
+}
+
+#contact .founders {
+  width: 50ch;
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+  justify-content: space-between;
+
+}
+
+#contact .founder {
+  width: 20ch;
+  text-align: start;
 }
