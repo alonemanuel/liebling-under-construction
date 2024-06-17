@@ -158,12 +158,14 @@ section header {
 }
 
 section h1 {
-  padding: 4px;
+  padding: 4px 6px;
   outline: var(--color-fore-0) solid 1px;
   font-size: 12px;
   font-weight: 900;
   width: fit-content;
   text-transform: uppercase;
+  letter-spacing: 2;
+
 }
 
 #at-glance {
