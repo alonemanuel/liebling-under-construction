@@ -2,6 +2,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
+  outline: 1px solid red !important;
 }
 
 @font-face {
@@ -9,16 +11,25 @@
   src: url(fonts/GT-Cinetype-Mono.woff2);
 }
 
+@font-face {
+  font-family: GtCinetypeBold;
+  src: url(fonts/GT-Cinetype-Bold.woff2);
+}
+
 :root {
   --color-white: #ebece7;
   --color-black: #131612;
+  --color-coal: #313039;
   --color-olive: #58583e;
   --color-grey: #20251f;
   --color-mint: #d7ffd7;
   --color-green: #49f259;
-  --color-highlight: #c6ffa0;
+  --color-lime: #c6ffa0;
 
   --font-cinetype-mono: "GtCinetypeMono";
+  --font-cinetype-bold: "GtCinetypeBold";
+
+  font-size: 12px;
 }
 
 #splash {
@@ -29,13 +40,14 @@
 #at-glance {
   --color-background: var(--color-black);
   --color-foreground: var(--color-green);
-  --color-fore-alt: var(--color-mint);
-  --color-back-alt: var(--color-olive);
+  --color-back-alt: var(--color-grey);
+  --color-fore-alt: var(--color-green);
 }
 
 #mission {
   --color-background: var(--color-white);
-  --color-foreground: var(--color-grey);
+  --color-foreground: var(--color-coal);
+  --color-back-alt: var(--color-lime);
 }
 
 #our-call {
@@ -89,14 +101,63 @@ body > section {
   align-items: center;
   justify-content: center;
   padding: 32px;
-  font-size: 32px;
   background-color: var(--color-background);
   color: var(--color-foreground);
 }
 
-section > h1 {
+section header {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 16px;
+}
+
+section h1 {
   padding: 4px;
   outline: var(--color-foreground) solid 1px;
   font-size: 12px;
   font-weight: 900;
+  width: fit-content;
+  text-transform: uppercase;
+}
+
+#at-glance {
+  gap: 64px;
+}
+
+#at-glance .boxes {
+  display: flex;
+  flex-flow: row;
+  gap: 32px;
+}
+
+#at-glance .box {
+  padding: 0.5em;
+  background-color: var(--color-back-alt);
+  color: var(--color-fore-alt);
+  font-size: 16px;
+}
+
+#mission {
+  font-size: 20px;
+  font-family: var(--font-cinetype-bold);
+}
+
+#mission span {
+  display: inline;
+  background-color: var(--color-back-alt);
+  line-height: 2;
+  text-wrap: balance;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.col {
+    flex-direction: column;
 }
