@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: GtCinetypeMono;
+  src: url(fonts/GT-Cinetype-Mono.woff2);
+}
+
+:root {
+  --color-white: #ebece7;
+  --color-black: #131612;
+  --color-olive: #58583e;
+  --color-grey: #20251f;
+  --color-mint: #d7ffd7;
+  --color-green: #49f259;
+  --color-highlight: #c6ffa0;
+
+  --font-cinetype-mono: "GtCinetypeMono";
+}
+
+#splash {
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-olive);
+}
+
+#at-glance {
+  --color-background: var(--color-black);
+  --color-foreground: var(--color-green);
+  --color-fore-alt: var(--color-mint);
+  --color-back-alt: var(--color-olive);
+}
+
+#mission {
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-grey);
+}
+
+#our-call {
+  --color-background: var(--color-mint);
+  --color-foreground: var(--color-black);
+}
+
+#benefits {
+  --color-background: var(--color-black);
+  --color-foreground: var(--color-mint);
+}
+
+#vision {
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-black);
+}
+
+#program {
+  --color-background: var(--color-black);
+  --color-foreground: var(--color-mint);
+}
+
+#testimonals {
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-olive);
+}
+
+#application {
+  --color-background: var(--color-mint);
+  --color-foreground: var(--color-olive);
+}
+
+#contact {
+  --color-background: var(--color-mint);
+  --color-foreground: var(--color-olive);
+}
+
+body {
+  display: flex;
+  min-width: 100%;
+  justify-content: start;
+  align-items: stretch;
+  flex-flow: column nowrap;
+  font-family: var(--font-cinetype-mono);
+}
+
+body > section {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  font-size: 32px;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+section > h1 {
+  padding: 4px;
+  outline: var(--color-foreground) solid 1px;
+  font-size: 12px;
+  font-weight: 900;
+}
