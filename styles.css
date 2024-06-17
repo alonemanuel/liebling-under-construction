@@ -341,11 +341,21 @@ section h1 {
   display: flex;
   flex-direction: row;
   gap: 1em;
+  justify-content: center;
 }
 
 #program .area {
   display: flex;
   flex-direction: column;
   background-color: var(--color-back-1);
-  padding: 4px 8px;
+  padding: 0.5em;
+  padding-inline-end: 1em;
+  align-items: start;
+  font-size: var(--fs-600);
+  line-height: 1;
+  text-wrap: balance;
+}
+
+#program .area .info {
+    max-width: 12ch;
 }
