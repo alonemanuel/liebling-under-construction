@@ -27,14 +27,21 @@
   /* outline: 1px solid red !important; */
 }
 
-button, input[type="submit"], input[type="reset"] {
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 h1,
@@ -64,6 +71,7 @@ svg {
 
 :root {
   --color-white: #ebece7;
+  --color-white-alpha: #ebece788;
   --color-black: #131612;
   --color-coal: #313039;
   --color-olive: #58583e;
@@ -91,6 +99,7 @@ svg {
 
   font-size: 12px;
   max-width: 100%;
+  scroll-behavior: smooth;
 }
 
 #splash {
@@ -478,10 +487,61 @@ button {
   flex-direction: row;
   gap: 4em;
   justify-content: space-between;
-
 }
 
 #contact .founder {
   width: 20ch;
   text-align: start;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 28px;
+}
+
+nav .menus {
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+}
+
+nav .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+nav .menu a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  outline: 1px solid var(--color-coal);
+  border-radius: 2px;
+  padding: 1em;
+  flex: 0;
+  align-self: flex-start;
+  text-transform: uppercase;
+  background-color: var(--color-white-alpha);
+}
+
+nav .logos {
+  border-radius: 2px;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  background-color: var(--color-white-alpha);
+  align-self: flex-start;
+}
+
+nav .logo {
+  display: flex;
+}
+nav .logo svg {
+  height: 30px;
+  width: 100%;
 }
