@@ -3,8 +3,17 @@
   padding: 0;
   margin: 0;
 
-  outline: 1px solid red !important;
+  /* outline: 1px solid red !important; */
 }
+
+input, button, textarea, select {
+    font: inherit;
+  }
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
 
 @font-face {
   font-family: GtCinetypeMono;
@@ -29,7 +38,16 @@
   --font-cinetype-mono: "GtCinetypeMono";
   --font-cinetype-bold: "GtCinetypeBold";
 
+  --fs-900: 100px;
+  --fs-800: 49px;
+  --fs-700: 24px;
+  --fs-600: 20px;
+  --fs-500: 16px;
+  --fs-400: 14px;
+  --fs-300: 12px;
+
   font-size: 12px;
+  max-width: 100%;
 }
 
 #splash {
@@ -90,13 +108,13 @@ body {
   min-width: 100%;
   justify-content: start;
   align-items: stretch;
-  flex-flow: column nowrap;
+  flex-flow: column;
   font-family: var(--font-cinetype-mono);
 }
 
 body > section {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
   gap: 12px;
   align-items: center;
   justify-content: center;
@@ -107,7 +125,7 @@ body > section {
 
 section header {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
   gap: 16px;
 }
 
@@ -126,7 +144,7 @@ section h1 {
 
 #at-glance .boxes {
   display: flex;
-  flex-flow: row;
+  flex-direction: row;
   gap: 32px;
 }
 
@@ -149,15 +167,35 @@ section h1 {
   text-wrap: balance;
 }
 
-
 .flex {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5em;
 }
 
 .row {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .col {
-    flex-direction: column;
+  flex-direction: column;
+}
+
+.fs900 {
+  font-size: var(--fs-900);
+}
+.fs800 {
+  font-size: var(--fs-800);
+}
+.fs700 {
+  font-size: var(--fs-700);
+}
+.fs600 {
+  font-size: var(--fs-600);
+}
+.fs500 {
+  font-size: var(--fs-500);
+}
+.fs400 {
+  font-size: var(--fs-400);
 }
