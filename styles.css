@@ -189,6 +189,7 @@ section h1 {
   width: fit-content;
   text-transform: uppercase;
   letter-spacing: 2;
+  text-wrap: nowrap;
 }
 
 #at-glance {
