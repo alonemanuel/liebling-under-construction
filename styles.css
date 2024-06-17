@@ -120,8 +120,10 @@ svg {
 #program {
   --color-back-0: var(--color-black);
   --color-fore-0: var(--color-green);
-  --color-fore-1: var(--color-mint);
   --color-back-1: var(--color-grey);
+  --color-fore-1: var(--color-mint);
+  --color-back-2: var(--color-lime);
+  --color-fore-2: var(--color-olive);
 }
 
 #testimonals {
@@ -419,4 +421,31 @@ section h1 {
   flex-direction: column;
   align-items: start;
   gap: 2em;
+}
+
+#program .slots {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  color: var(--color-fore-1);
+}
+
+#program .slot {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  outline: 1px solid;
+  height: 300px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border-radius: 50%;
+  text-align: center;
+}
+
+button {
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+  letter-spacing: 1.5;
 }
