@@ -552,20 +552,26 @@ nav .logo svg {
 }
 
 #splash {
+  height: 100%;
+}
+
+#splash .splash-inner {
   display: flex;
   flex-direction: column;
   gap: 12px;
   font-size: 90px;
   font-family: var(--font-cinetype-bold);
   align-items: stretch;
-  padding: 120px 12px;
+  padding: 60px 12px;
+  padding-block-start: 240px;
 }
 
-#splash > div {
+.splash-inner > div {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 16px;
+  z-index: 1;
 }
 
 #splash .splash-0 {
@@ -601,12 +607,20 @@ nav .logo svg {
   gap: 8px;
 }
 
-
-
 #splash .splash-2 button {
   font-size: var(--fs-300);
   width: auto;
   max-width: none;
   background-color: var(--color-lime);
-  max-width: fit-content;;
+  max-width: fit-content;
+}
+
+#splash video {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  opacity: 0.2;
+  object-fit: cover;
+  /* margin-block-start: -240px; */
 }
