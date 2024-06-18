@@ -943,6 +943,30 @@ nav .logo svg {
   font-family: var(--font-cinetype-bold);
 }
 
+.nowrap {
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.break-word {
+  word-break: break-word;
+}
+
+.no-balance {
+  text-wrap: pretty;
+}
+
+.no-gap {
+  gap: 0;
+}
+.cap {
+  text-transform: uppercase;
+}
+
 @media (max-aspect-ratio: 1) and (max-height: 900px) {
   body > section {
     padding: 64px 16px;
@@ -1040,28 +1064,4 @@ nav .logo svg {
   #contact .founders {
     width: auto;
   }
-}
-
-.nowrap {
-  flex-wrap: nowrap;
-  white-space: nowrap;
-}
-
-.full-width {
-  width: 100%;
-}
-
-.break-word {
-  word-break: break-word;
-}
-
-.no-balance {
-  text-wrap: pretty;
-}
-
-.no-gap {
-  gap: 0;
-}
-.cap {
-  text-transform: uppercase;
 }
