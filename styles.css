@@ -640,6 +640,7 @@ nav .logo svg {
 #application .carousel {
   width: 100%;
   overflow: scroll;
+  scroll
 }
 
 #application .carou-inner {
@@ -654,10 +655,11 @@ nav .logo svg {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 8px;
+  gap: 12px;
   align-items: center;
   text-align: center;
-  max-width: 15ch;
+  max-width: 20ch;
   min-width: 10ch;
   flex-shrink: 0;
+  font-family: var(--font-cinetype-bold);
 }
