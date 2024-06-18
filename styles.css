@@ -479,6 +479,10 @@ section h1 {
   overflow: hidden;
 }
 
+#our-call header {
+  align-self: flex-start;
+}
+
 #our-call .infos {
   display: flex;
   flex-direction: column;
@@ -532,12 +536,20 @@ section h1 {
   word-break: normal;
 }
 
-#our-call .shapes {
+#our-call .shapes-outer {
   flex: 1;
-  min-height: 450px;
+  /* min-height: 450px;
   min-width: 250px;
+  position: relative; */
+}
+
+#our-call .shapes {
+  /* flex: 1; */
+  height: 500px;
+  width: 500px;
   position: relative;
 }
+
 @keyframes circularMotion {
   0% {
     transform: rotate(0deg);
@@ -570,15 +582,15 @@ section h1 {
 }
 
 #our-call .shape.s0 {
-  translate: 110px -50px;
+  translate: 110px -80px;
 }
 
 #our-call .shape.s1 {
-  translate: -110px -50px;
+  translate: -110px -80px;
 }
 
 #our-call .shape.s2 {
-  translate: 0 140px;
+  translate: 0 110px;
 }
 
 #our-call .shape svg {
