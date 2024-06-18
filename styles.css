@@ -436,7 +436,7 @@ section h1 {
 
 #program .window {
   display: flex;
-  outline: 1px solid;
+  font-size: 11px;
   width: 93px;
   height: 120px;
   display: flex;
@@ -444,7 +444,19 @@ section h1 {
   align-items: center;
   align-content: center;
   text-align: center;
-  border-radius: 50%;
+  position: relative;
+
+}
+
+#program .window .text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
 }
 
 #our-call {
