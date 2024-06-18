@@ -246,8 +246,9 @@ section h1 {
 }
 
 #mission {
-  font-size: 20px;
+  font-size: 32px;
   font-family: var(--font-cinetype-bold);
+  align-content: start;
 }
 
 #mission span {
@@ -574,6 +575,10 @@ button:hover {
 
 .w30 {
   max-width: 30ch;
+}
+
+.w15 {
+  max-width: 15ch;
 }
 
 #contact .founders {
