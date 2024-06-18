@@ -343,7 +343,6 @@ section h1 {
   gap: 1em;
   align-items: stretch;
   max-width: calc(40ch * 3);
-
 }
 
 #benefits .box {
@@ -396,18 +395,22 @@ section h1 {
   flex-direction: row;
   gap: 1em;
   justify-content: center;
+  max-width: calc(3 * 40ch);
 }
 
 #program .area {
   display: flex;
   flex-direction: column;
   background-color: var(--color-back-1);
-  padding: 0.5em;
+  padding: 1em;
   padding-inline-end: 1em;
   align-items: start;
   font-size: var(--fs-600);
   line-height: 1;
   text-wrap: balance;
+  width: 20ch;
+  flex-shrink: 0;
+  gap: 16px;
 }
 
 #program .area .info {
@@ -897,6 +900,7 @@ nav .logo svg {
     flex-direction: row;
     align-items: center;
     gap: 16px;
+    width: auto;
   }
 
   button {
