@@ -680,6 +680,7 @@ nav .logo svg {
   flex-wrap: nowrap;
   gap: 64px;
   align-items: baseline;
+  align-items: flex-start;
 }
 
 #testimonals .carousel .item {
@@ -703,8 +704,13 @@ nav .logo svg {
   /* height: 50px; */
   width: 200px;
   height: max(250px, 100%);
+  height: 250px;
   overflow: hidden;
   object-fit: cover;
+}
+
+#testimonals .carousel .item .icon img.right {
+  object-position: right;
 }
 
 #testimonals .carousel .item .info {
@@ -713,7 +719,7 @@ nav .logo svg {
   flex-direction: column;
   gap: 16px;
   flex-wrap: nowrap;
-  max-width: 28ch;
+  max-width: 30ch;
   text-align: start;
   font-family: var(--font-cinetype-mono);
   font-size: var(--fs-300);
