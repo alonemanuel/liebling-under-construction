@@ -983,3 +983,6 @@ nav .logo svg {
 .no-gap {
   gap: 0;
 }
+.cap {
+  text-transform: uppercase;
+}
