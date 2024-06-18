@@ -370,7 +370,7 @@ section h1 {
 }
 
 #vision {
-  gap: 2em;
+  gap: 3em;
 }
 
 #program .boxes {
@@ -947,4 +947,8 @@ nav .logo svg {
 
 .break-word {
   word-break: break-word;
+}
+
+.no-balance {
+  text-wrap: pretty;
 }
