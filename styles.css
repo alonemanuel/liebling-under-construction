@@ -557,6 +557,12 @@ button {
   text-transform: uppercase;
   letter-spacing: 1.5;
   border-radius: 2px;
+  transition: all 0.1s ease-out;
+  filter: drop-shadow(0 0 0px var(--color-fore-0));
+}
+
+button:hover {
+  filter: drop-shadow(0 0 4px var(--color-fore-0));
 }
 
 .w60 {
@@ -858,6 +864,31 @@ nav .logo svg {
     flex-direction: row;
     align-items: center;
     gap: 16px;
+  }
+
+  button {
+    width: 80%;
+    padding-block: 2em;
+  }
+
+  .carou-inner {
+    gap: 16px !important;
+  }
+    
+  .carou-inner .item {
+    flex-direction: column !important;
+    width: 80%;
+    padding-inline-end: 8px !important;
+    gap: 8px !important;
+  }
+
+  .carou-inner .item .info {
+    max-width: none !important;
+  }
+
+  .carou-inner .item .icon img {
+    width: 100% !important;
+    height: 250px;
   }
 }
 
