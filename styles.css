@@ -284,6 +284,10 @@ section h1 {
   align-items: start;
 }
 
+.align-start {
+  align-items: start;
+}
+
 .fs900 {
   font-size: var(--fs-900);
 }
@@ -578,23 +582,43 @@ section h1 {
 
 #program .slots {
   display: flex;
+  justify-content: center;
   flex-direction: row;
-  gap: 2em;
   color: var(--color-fore-1);
+  gap: 1em;
+  padding: 1.5em;
 }
 
 #program .slot {
   display: flex;
-  flex-direction: column;
-  gap: 2em;
-  outline: 1px solid;
-  height: 300px;
-  width: 200px;
+  font-size: var(--fs-300);
+  width: 250px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1em;
-  border-radius: 50%;
+  align-content: center;
   text-align: center;
+  position: relative;
+  height: fit-content;
+}
+
+#program .slot svg {
+  height: fit-content;
+}
+
+#program .slot .text {
+  max-width: 80%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 button {
