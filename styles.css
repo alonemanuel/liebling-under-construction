@@ -24,7 +24,6 @@
   border: none;
   /* word-wrap: break-word;
   white-space: pre-wrap; */
-  word-break: break-word;
 
   /* line-height: 1.3; */
 
@@ -477,7 +476,9 @@ section h1 {
 #our-call .bullets {
   display: flex;
   flex-direction: row;
-  gap: 4em;
+  gap: 2em;
+  align-items: flex-start !important;
+  justify-content: space-between;
 }
 
 #our-call .bullet {
@@ -485,6 +486,18 @@ section h1 {
   flex-direction: column;
   align-items: start;
   gap: 2em;
+  max-width: clamp(25ch, 25vw, 60ch);
+}
+
+#our-call .bullet .title {
+  font-size: var(--fs-700);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 16px;
+  align-items: baseline;
+  text-align: start;
+  word-break: normal;
 }
 
 #our-call .shapes {
@@ -924,4 +937,13 @@ nav .logo svg {
 
 .nowrap {
   flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.break-word {
+  word-break: break-word;
 }
