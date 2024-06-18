@@ -444,6 +444,10 @@ section h1 {
   gap: 4em;
 }
 
+#our-call .ball-neighbor {
+  flex: 1;
+}
+
 #our-call .info {
   display: flex;
   flex-direction: row;
@@ -471,6 +475,40 @@ section h1 {
   flex-direction: column;
   align-items: start;
   gap: 2em;
+}
+
+#our-call .shapes {
+  flex: 1;
+}
+
+#our-call .shape {
+  position: relative;
+  text-transform: uppercase;
+  position: absolute;
+}
+
+#our-call .shape.s0 {
+  translate: 110px -180px;
+}
+
+#our-call .shape.s1 {
+  translate: -110px -180px;
+}
+
+#our-call .shape svg {
+  max-width: none;
+  height: 250px;
+}
+
+#our-call .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: fit-content;
+  width: fit-content;
 }
 
 #program .slots {
@@ -565,11 +603,22 @@ nav .logos {
   gap: 32px;
   background-color: var(--color-white-alpha);
   align-self: flex-start;
+  transition: all 0.15s ease-out;
+}
+
+nav .logos:hover {
+  background-color: var(--color-mint);
 }
 
 nav .logo {
   display: flex;
+  transition: all 0.15s ease-out;
 }
+
+nav .logo:hover {
+  scale: 1.02;
+}
+
 nav .logo svg {
   height: 30px;
   width: 100%;
