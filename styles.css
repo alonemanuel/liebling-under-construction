@@ -272,6 +272,7 @@ section h1 {
 
 .center {
   text-align: center;
+  justify-content: center;
 }
 
 .start {
@@ -383,6 +384,7 @@ section h1 {
   padding: 0.5em 1em;
   gap: 4em;
   font-size: var(--fs-500);
+  border-radius: 2px;
 }
 
 #program .areas {
@@ -436,6 +438,10 @@ section h1 {
   align-content: center;
   text-align: center;
   border-radius: 50%;
+}
+
+#our-call {
+  overflow: hidden;
 }
 
 #our-call .infos {
@@ -813,6 +819,10 @@ nav .logo svg {
 }
 
 @media (max-aspect-ratio: 1) {
+  body > section {
+    padding: 64px 16px;
+  }
+
   .flex.row {
     flex-direction: column;
   }
@@ -821,4 +831,36 @@ nav .logo svg {
     flex-direction: column;
     gap: 16px;
   }
+
+  .mobile-center {
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    justify-self: center !important;
+  }
+
+  .flex.mobile-row {
+    flex-direction: row;
+  }
+
+  .mobile-linear {
+    flex-direction: column !important;
+    width: 80%;
+    align-items: stretch;
+    gap: 20px;
+  }
+  
+  #program .boxes .box {
+    gap: 16px;
+  }
+
+  #program .areas .area {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+.nowrap {
+  flex-wrap: nowrap;
 }
