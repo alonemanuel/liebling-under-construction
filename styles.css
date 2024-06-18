@@ -827,14 +827,19 @@ nav .logo svg {
 }
 
 #splash video {
-  /* height: 100%; */
   width: 100%;
-  /* position: absolute; */
   top: 0;
   z-index: 0;
-  /* opacity: 0.2; */
   object-fit: cover;
   pointer-events: none;
+}
+
+#splash video.landscape {
+  display: block;
+}
+
+#splash video.portrait {
+  display: none;
 }
 
 #application h1 {
@@ -1015,6 +1020,14 @@ nav .logo svg {
   .founder {
     text-align: center !important;
     font-size: var(--fs-700);
+  }
+
+  #splash video.landscape {
+    display: none;
+  }
+
+  #splash video.portrait {
+    display: block;
   }
 }
 
