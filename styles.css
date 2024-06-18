@@ -531,6 +531,11 @@ nav .menu a {
   align-self: flex-start;
   text-transform: uppercase;
   background-color: var(--color-white-alpha);
+  transition: all 0.15s ease-out;
+}
+
+nav .menu a:hover {
+  background-color: var(--color-mint);
 }
 
 nav .logos {
