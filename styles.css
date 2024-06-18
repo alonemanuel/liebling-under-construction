@@ -423,7 +423,7 @@ section h1 {
   flex-direction: column;
   gap: 1em;
   color: var(--color-fore-1);
-  pad: 1em;
+  padding: 2em;
 }
 
 #program .windows {
@@ -436,19 +436,18 @@ section h1 {
 
 #program .window {
   display: flex;
-  font-size: 11px;
-  width: 93px;
-  height: 120px;
+  font-size: var(--fs-300);
+  width: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
   text-align: center;
   position: relative;
-
 }
 
 #program .window .text {
+  max-width: 80%;
   position: absolute;
   top: 0;
   bottom: 0;
