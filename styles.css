@@ -647,6 +647,7 @@ nav .logo svg {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 64px;
+  align-items: baseline;
 }
 
 #application .carousel .item {
