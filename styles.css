@@ -725,11 +725,32 @@ nav .menus.portrait .fab {
   margin: 1.5em;
 }
 
+nav #menu-portrait  {
+  max-height: 0;
+  transition: all 0.2s ease-out;
+  overflow: hidden;
+}
+
+nav #menu-portrait.clicked  {
+  max-height: 70vh;
+}
+
 nav .menus.portrait {
   bottom: 0;
   position: fixed;
   left: 0;
   margin: 1.5em;
+}
+
+nav .menus.portrait .menu {
+  margin: 2px;
+}
+
+nav .menus.portrait .fab,
+nav .menus.portrait a
+ {
+  background-color: var(--color-white);
+
 }
 
 nav .fab,
@@ -1131,6 +1152,7 @@ nav .logo svg {
     justify-content: space-between;
     width: 100%;
   }
+
   nav .logo svg {
     height: 25px;
   }
