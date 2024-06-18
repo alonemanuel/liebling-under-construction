@@ -622,5 +622,5 @@ nav .logo svg {
   z-index: 0;
   opacity: 0.2;
   object-fit: cover;
-  /* margin-block-start: -240px; */
+  pointer-events: none;
 }
