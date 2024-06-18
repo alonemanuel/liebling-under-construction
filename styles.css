@@ -573,6 +573,10 @@ button:hover {
   max-width: 60ch;
 }
 
+.w30 {
+  max-width: 30ch;
+}
+
 #contact .founders {
   width: 40ch;
   display: flex;
