@@ -894,6 +894,18 @@ nav .logo svg {
     width: 100% !important;
     height: 250px;
   }
+
+  .founders {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+  
+  .founder {
+    text-align: center !important;
+    font-size: var(--fs-700);
+  }
+  
 }
 
 .nowrap {
