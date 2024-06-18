@@ -560,6 +560,9 @@ nav .logo svg {
 
 #splash {
   height: 100%;
+  position: relative;
+  height: fit-content;
+  z-index: -1;
 }
 
 #splash .splash-inner {
