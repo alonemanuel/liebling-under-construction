@@ -859,7 +859,7 @@ nav .logo svg {
   flex-wrap: nowrap;
   gap: 64px;
   align-items: baseline;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 #testimonals .carousel .item {
