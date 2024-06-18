@@ -732,6 +732,10 @@ nav .logo svg {
   color: var(--color-back-0);
 }
 
+#application h3 {
+  font-size: var(--fs-800);
+}
+
 #application .carousel {
   width: 100%;
   overflow: scroll;
