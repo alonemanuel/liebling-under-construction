@@ -434,6 +434,12 @@ section h1 {
   padding: 1.5em;
 }
 
+#program .title-box {
+  outline: 1px solid;
+  width: 100%;
+  padding: 1em;
+}
+
 #program .window {
   display: flex;
   font-size: var(--fs-300);
@@ -972,4 +978,8 @@ nav .logo svg {
 
 .no-balance {
   text-wrap: pretty;
+}
+
+.no-gap {
+  gap: 0;
 }
