@@ -160,6 +160,7 @@ svg {
 #application {
   --color-back-0: var(--color-mint);
   --color-fore-0: var(--color-olive);
+  --color-back-1: var(--color-coal);
 }
 
 #contact {
@@ -186,6 +187,7 @@ body > section {
   background-color: var(--color-back-0);
   color: var(--color-fore-0);
   padding: 86px 64px;
+  width: 100%;
 }
 
 section header {
@@ -628,4 +630,33 @@ nav .logo svg {
   opacity: 0.2;
   object-fit: cover;
   pointer-events: none;
+}
+
+#application h1 {
+  background-color: var(--color-back-1);
+  color: var(--color-back-0);
+}
+
+#application .carousel {
+  width: 100%;
+  overflow: scroll;
+}
+
+#application .carou-inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 64px;
+}
+
+#application .carousel .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+  max-width: 15ch;
+  min-width: 10ch;
+  flex-shrink: 0;
 }
