@@ -1064,4 +1064,29 @@ nav .logo svg {
   #contact .founders {
     width: auto;
   }
+
+  #our-call .shape svg {
+    height: 170px;
+  }
+
+  #our-call .shapes {
+    height: 330px;
+    width: 80vw;
+  }
+
+  #our-call .shape.s0 {
+    translate: 15% -40%;
+  }
+
+  #our-call .shape.s1 {
+    translate: -25% -40%;
+  }
+
+  #our-call .shape.s2 {
+    translate: -5% 30%;
+  }
+
+  #our-call .bullet {
+    max-width: 60ch;
+  }
 }
