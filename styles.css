@@ -655,6 +655,7 @@ nav .logo svg {
   position: relative;
   height: fit-content;
   z-index: -1;
+  padding: 0;
 }
 
 #splash .splash-inner {
@@ -666,6 +667,7 @@ nav .logo svg {
   align-items: stretch;
   padding: 60px 12px;
   padding-block-start: 240px;
+  display: none;
 }
 
 .splash-inner > div {
@@ -718,11 +720,12 @@ nav .logo svg {
 }
 
 #splash video {
-  height: 100%;
-  position: absolute;
+  /* height: 100%; */
+  width: 100%;
+  /* position: absolute; */
   top: 0;
   z-index: 0;
-  opacity: 0.2;
+  /* opacity: 0.2; */
   object-fit: cover;
   pointer-events: none;
 }
@@ -859,7 +862,7 @@ nav .logo svg {
     align-items: stretch;
     gap: 20px;
   }
-  
+
   #program .boxes .box {
     gap: 16px;
   }
@@ -878,7 +881,7 @@ nav .logo svg {
   .carou-inner {
     gap: 16px !important;
   }
-    
+
   .carou-inner .item {
     flex-direction: column !important;
     width: 80%;
@@ -900,12 +903,11 @@ nav .logo svg {
     align-items: center !important;
     gap: 8px !important;
   }
-  
+
   .founder {
     text-align: center !important;
     font-size: var(--fs-700);
   }
-  
 }
 
 .nowrap {
