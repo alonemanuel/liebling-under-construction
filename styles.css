@@ -444,6 +444,11 @@ section h1 {
   align-content: center;
   text-align: center;
   position: relative;
+  height: fit-content;
+}
+
+#program .window svg {
+  height: fit-content;
 }
 
 #program .window .text {
@@ -456,6 +461,7 @@ section h1 {
   margin: auto;
   width: fit-content;
   height: fit-content;
+  text-transform: uppercase;
 }
 
 #our-call {
