@@ -538,6 +538,23 @@ section h1 {
   min-width: 250px;
   position: relative;
 }
+@keyframes circularMotion {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 #our-call .shape {
   position: relative;
@@ -567,6 +584,7 @@ section h1 {
 #our-call .shape svg {
   max-width: none;
   height: 250px;
+  animation: circularMotion 8s infinite linear;
 }
 
 #our-call .text {
