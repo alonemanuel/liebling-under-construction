@@ -479,20 +479,34 @@ section h1 {
 
 #our-call .shapes {
   flex: 1;
+  min-height: 450px;
+  min-width: 250px;
+  position: relative;
 }
 
 #our-call .shape {
   position: relative;
   text-transform: uppercase;
   position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
 }
 
 #our-call .shape.s0 {
-  translate: 110px -180px;
+  translate: 110px -50px;
 }
 
 #our-call .shape.s1 {
-  translate: -110px -180px;
+  translate: -110px -50px;
+}
+
+#our-call .shape.s2 {
+  translate: 0 140px;
 }
 
 #our-call .shape svg {
@@ -796,4 +810,15 @@ nav .logo svg {
 
 #testimonals .carousel .item .name {
   font-family: var(--font-cinetype-bold);
+}
+
+@media (max-aspect-ratio: 1) {
+  .flex.row {
+    flex-direction: column;
+  }
+
+  #our-call .info {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
