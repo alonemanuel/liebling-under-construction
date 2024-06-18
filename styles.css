@@ -428,6 +428,7 @@ section h1 {
 
 #program .windows {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   color: var(--color-fore-1);
   gap: 1em;
