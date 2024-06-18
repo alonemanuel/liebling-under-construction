@@ -720,10 +720,11 @@ nav .menu {
 
 nav .menus.portrait .fab {
   position: fixed;
-  bottom: 0;
+  top: 0;
   right: 0;
   margin: 1.5em;
   cursor: pointer;
+  opacity: 0;
 }
 
 nav #menu-portrait  {
@@ -737,7 +738,8 @@ nav #menu-portrait.clicked  {
 }
 
 nav .menus.portrait {
-  bottom: 0;
+  top: 0;
+  z-index: 10;
   position: fixed;
   left: 0;
   margin: 1.5em;
@@ -769,8 +771,9 @@ nav .menu a {
   transition: all 0.15s ease-out;
 }
 
+nav .fab:hover,
 nav .menu a:hover {
-  background-color: var(--color-mint);
+  background-color: var(--color-mint) !important;
 }
 
 nav .logos {
