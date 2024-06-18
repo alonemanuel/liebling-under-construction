@@ -114,8 +114,8 @@ svg {
 #at-glance {
   --color-back-0: var(--color-black);
   --color-fore-0: var(--color-green);
-  --color-back-alt: var(--color-grey);
-  --color-fore-1: var(--color-green);
+  --color-back-1: var(--color-grey);
+  --color-fore-1: var(--color-mint);
 }
 
 #mission {
@@ -218,10 +218,27 @@ section h1 {
 }
 
 #at-glance .box {
-  padding: 0.5em;
-  background-color: var(--color-back-alt);
+  padding: 1em;
+  background-color: var(--color-back-1);
+  border-radius: 2px;
   color: var(--color-fore-1);
   font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#at-glance .box .name {
+  font-family: var(--font-cinetype-bold);
+  font-size: var(--fs-700);
+  color: var(--color-fore-0);
+}
+
+#at-glance button {
+  background-color: var(--color-lime);
+  color: var(--color-grey);
 }
 
 #mission {
@@ -481,7 +498,7 @@ button {
   padding: 0.5em 1em;
   text-transform: uppercase;
   letter-spacing: 1.5;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 .w60 {
