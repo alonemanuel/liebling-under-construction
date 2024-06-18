@@ -647,7 +647,7 @@ button:hover {
 }
 
 #contact .founders {
-  width: 40ch;
+  width: 50ch;
   display: flex;
   flex-direction: row;
   gap: 4em;
