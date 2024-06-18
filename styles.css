@@ -31,6 +31,10 @@
   /* outline: 1px solid red !important; */
 }
 
+iframe{
+  width:100%;
+}
+
 a {
   color: inherit; /* blue colors for links too */
   text-decoration: inherit; /* no underline */
