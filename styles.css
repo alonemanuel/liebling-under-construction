@@ -386,7 +386,8 @@ section h1 {
 #program .box {
   outline: 1px solid var(--color-fore-1);
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
+  flex-wrap: nowrap;
   justify-content: space-between;
   padding: 0.5em 1em;
   gap: 4em;
@@ -1060,7 +1061,7 @@ nav .logo svg {
   }
 
   #program .boxes .box {
-    gap: 16px;
+    gap: 16px; 
   }
 
   #program .areas .area {
