@@ -694,7 +694,7 @@ button:hover {
   text-align: start;
 }
 
-#contact .logos {
+#mission .logos {
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -702,7 +702,7 @@ button:hover {
   gap: 16px;
 }
 
-#contact .logos .logo {
+#mission .logos .logo {
   margin: auto;
 }
 
