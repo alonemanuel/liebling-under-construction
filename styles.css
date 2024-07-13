@@ -691,6 +691,11 @@ button:hover {
   justify-content: space-between;
 }
 
+#contact button {
+  outline: 1px solid var(--color-fore-0);
+  text-transform: none;
+}
+
 #contact .founder {
   max-width: 20ch;
   text-align: start;
