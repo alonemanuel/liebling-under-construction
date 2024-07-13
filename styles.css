@@ -169,6 +169,8 @@ svg {
 #contact {
   --color-back-0: var(--color-white);
   --color-fore-0: var(--color-olive);
+  --color-back-1: var(--color-lime);
+  --color-fore-1: var(--color-olive);
 }
 
 body {
