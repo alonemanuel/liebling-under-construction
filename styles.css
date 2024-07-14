@@ -714,6 +714,10 @@ button:hover {
   margin: auto;
 }
 
+#mission .logos .logo svg {
+  height: 45px;
+}
+
 nav {
   position: fixed;
   display: flex;
