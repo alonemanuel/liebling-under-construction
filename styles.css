@@ -163,6 +163,7 @@ svg {
 #application {
   --color-back-0: var(--color-mint);
   --color-fore-0: var(--color-olive);
+  --color-fore-1: var(--color-coal);
   --color-back-1: var(--color-coal);
 }
 
@@ -250,7 +251,6 @@ section h1 {
   font-family: var(--font-cinetype-bold);
   align-content: start;
   font-size: 32px;
-
 }
 
 #mission span {
@@ -925,10 +925,6 @@ nav .logo svg {
 #application h1 {
   background-color: var(--color-back-1);
   color: var(--color-back-0);
-}
-
-#application h3 {
-  font-size: var(--fs-800);
 }
 
 #application .carousel {
