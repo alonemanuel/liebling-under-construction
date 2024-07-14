@@ -595,15 +595,15 @@ section h1 {
 }
 
 #mission .shape.s0 {
-  translate: 110px -80px;
+  transform: translate(110px, -80px);
 }
 
 #mission .shape.s1 {
-  translate: -110px -80px;
+  transform: translate(-110px, -80px);
 }
 
 #mission .shape.s2 {
-  translate: 0 110px;
+  transform: translate(0, 110px);
 }
 
 #mission .shape svg {
@@ -1246,15 +1246,15 @@ nav .logo svg {
   }
 
   #mission .shape.s0 {
-    translate: 40% -45%;
+    transform: translate(40%, -45%);
   }
 
   #mission .shape.s1 {
-    translate: -50% -45%;
+    transform: translate(-50%, -45%);
   }
 
   #mission .shape.s2 {
-    translate: -5% 30%;
+    transform: translate(-5%, 30%);
   }
 
   #our-call .bullet {
