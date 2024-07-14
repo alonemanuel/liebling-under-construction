@@ -808,6 +808,7 @@ nav .logos {
   background-color: var(--color-white-alpha);
   align-self: flex-start;
   transition: all 0.15s ease-out;
+  flex-wrap: nowrap;
 }
 
 nav .logos:hover {
