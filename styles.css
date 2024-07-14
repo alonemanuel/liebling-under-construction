@@ -928,6 +928,44 @@ nav .logo svg {
   color: var(--color-back-0);
 }
 
+#application .boxes {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+#application .box {
+  padding: 1em;
+  /* background-color: var(--color-back-1); */
+  border: 1px var(--color-back-1) solid;
+  border-radius: 2px;
+  color: var(--color-fore-1);
+  font-size: var(--fs-300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  height: 100px;
+  width: 30ch;
+}
+
+#application .box .name {
+  font-family: var(--font-cinetype-bold);
+  /* font-size: var(--fs-700); */
+  color: var(--color-fore-0);
+  align-self: flex-start;
+}
+
+#application .box .check {
+  /* width: 30px;
+  height: 30px; */
+  flex-shrink: 0;
+  align-self: flex-end;
+
+}
+
 #application .carousel {
   width: 100%;
   overflow: scroll;
