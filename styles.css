@@ -234,6 +234,7 @@ section h1 {
   align-items: center;
   flex-direction: column;
   gap: 16px;
+  flex-basis: 22ch;
 }
 
 #at-glance .box .name {
