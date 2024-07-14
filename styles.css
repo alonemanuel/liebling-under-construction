@@ -93,6 +93,7 @@ svg {
 
   --fs-900: 100px;
   --fs-800: 49px;
+  --fs-750: 32px;
   --fs-700: 24px;
   --fs-600: 20px;
   --fs-500: 16px;
@@ -233,7 +234,7 @@ section h1 {
   background-color: var(--color-back-1);
   border-radius: 2px;
   color: var(--color-fore-1);
-  font-size: 16px;
+  font-size: var(--fs-500);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -256,7 +257,7 @@ section h1 {
 #mission {
   font-family: var(--font-cinetype-bold);
   align-content: start;
-  font-size: 32px;
+  font-size: var(--fs-750);
 }
 
 #mission span {
@@ -621,7 +622,7 @@ section h1 {
   margin: auto;
   height: fit-content;
   width: fit-content;
-  font-size: 12px;
+  font-size: var(--fs-300);
 }
 
 #program .slots {
@@ -855,7 +856,7 @@ nav .logo svg {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  font-size: 90px;
+  font-size: var(--fs-900);
   font-family: var(--font-cinetype-bold);
   align-items: stretch;
   padding: 60px 12px;
@@ -1163,6 +1164,7 @@ nav .logo svg {
     align-items: center;
     gap: 16px;
     width: auto;
+    flex-wrap: nowrap;
   }
 
   button {
@@ -1218,6 +1220,12 @@ nav .logo svg {
   :root {
     --fs-900: 49px;
     --fs-800: 32px;
+    --fs-750: 24px;
+    --fs-700: 18px;
+    --fs-600: 16px;
+    --fs-500: 12px;
+    --fs-400: 10px;
+    --fs-300: 8px;
   }
 
   #contact .founders {
