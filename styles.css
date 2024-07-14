@@ -165,6 +165,7 @@ svg {
   --color-fore-0: var(--color-olive);
   --color-fore-1: var(--color-coal);
   --color-back-1: var(--color-coal);
+  --color-back-2: var(--color-black);
 }
 
 #contact {
@@ -934,6 +935,42 @@ nav .logo svg {
   gap: 32px;
 }
 
+#application button {
+  border: 1px var(--color-fore-0) solid;
+  background-color: var(--color-back-0);
+}
+
+#application .boxes .check.checked {
+  display: none;
+}
+
+#application #checkboxes input[type="checkbox"] {
+  display: none;
+}
+
+#application #checkboxes input[type="checkbox"]:checked + .box {
+  background-color: var(--color-fore-1);
+  color: var(--color-back-0);
+}
+
+#application #checkboxes input[type="checkbox"]:checked + .box .name {
+  color: var(--color-back-0);
+}
+
+#application #checkboxes input[type="checkbox"]:checked + .box .check.checked {
+  /* background-color: var(--color-back-2); */
+  display: unset;
+}
+
+#application
+  #checkboxes
+  input[type="checkbox"]:checked
+  + .box
+  .check.unchecked {
+  /* background-color: var(--color-back-2); */
+  display: none;
+}
+
 #application .box {
   padding: 1em;
   /* background-color: var(--color-back-1); */
@@ -963,7 +1000,6 @@ nav .logo svg {
   height: 30px; */
   flex-shrink: 0;
   align-self: flex-end;
-
 }
 
 #application .carousel {
