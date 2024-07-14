@@ -676,6 +676,10 @@ button:hover {
   max-width: 60ch;
 }
 
+.w45 {
+  max-width: 45ch;
+}
+
 .w30 {
   max-width: 30ch;
 }
