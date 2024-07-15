@@ -739,6 +739,7 @@ nav {
   justify-content: space-between;
   width: 100%;
   padding: 16px 28px;
+  z-index: 1;
 }
 
 .menus.landscape {
@@ -851,7 +852,7 @@ nav .logo svg {
   height: 100%;
   position: relative;
   height: fit-content;
-  z-index: -1;
+  /* z-index: -1; */
   padding: 0;
 }
 
@@ -926,6 +927,24 @@ nav .logo svg {
 
 #splash video.landscape {
   display: block;
+}
+
+#splash .button {
+  position: absolute;
+  z-index: 10;
+  left: 56%;
+  top: 70.5%;
+  background-color: white;
+  width: 15%;
+  min-width: 15ch;
+  height: 40px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-mint);
+  color: var(--color-coal);
+  padding-block: 0 !important;
 }
 
 #splash video.portrait {
