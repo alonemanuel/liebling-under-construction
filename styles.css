@@ -682,6 +682,10 @@ section h1 {
   filter: drop-shadow(0 0 4px var(--color-fore-0));
 }
 
+.w75 {
+  max-width: 75ch;
+}
+
 .w60 {
   max-width: 60ch;
 }
