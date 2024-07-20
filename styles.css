@@ -624,6 +624,7 @@ section h1 {
 #mission .shape svg {
   max-width: none;
   height: 250px;
+  width: 250px;
   width: fit-content;
   animation: circularMotion 8s infinite linear;
 }
@@ -1304,6 +1305,7 @@ nav .logo svg {
 
   #mission .shape svg {
     height: 120px;
+    width: 120px;
   }
 
   #mission .shape .text {
