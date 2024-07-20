@@ -130,6 +130,18 @@ svg {
   --color-back-alt: var(--color-lime);
 }
 
+#logos0 {
+  --color-back-0: var(--color-white);
+  --color-fore-0: var(--color-coal);
+  --color-back-alt: var(--color-lime);
+}
+
+#logos1 {
+  --color-back-0: var(--color-black);
+  --color-fore-0: var(--color-mint);
+  --color-back-alt: var(--color-lime);
+}
+
 #our-call {
   --color-back-0: var(--color-mint);
   --color-fore-0: var(--color-black);
@@ -720,7 +732,7 @@ section h1 {
   text-align: start;
 }
 
-#mission .logos {
+.logos-section .logos {
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -728,11 +740,11 @@ section h1 {
   gap: 16px;
 }
 
-#mission .logos .logo {
+.logos-section .logos .logo {
   margin: auto;
 }
 
-#mission .logos .logo svg {
+.logos-section .logos .logo svg {
   height: 45px;
 }
 
