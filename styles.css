@@ -771,6 +771,9 @@ nav .menus {
   display: flex;
   flex-direction: row;
   gap: 4em;
+  flex-grow: 3;
+  justify-content: center;
+
 }
 
 nav .menu {
@@ -833,6 +836,11 @@ nav .menu a {
 nav .fab:hover,
 nav .menu a:hover {
   background-color: var(--color-mint) !important;
+}
+
+nav .logos-wrapper {
+  display: flex;
+  flex-grow: 2;
 }
 
 nav .logos {
