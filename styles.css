@@ -756,7 +756,7 @@ nav {
   justify-content: space-between;
   width: 100%;
   padding: 16px 28px;
-  z-index: 1;
+  z-index: 11;
 }
 
 .menus.landscape {
