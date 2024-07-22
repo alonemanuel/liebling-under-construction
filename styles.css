@@ -773,7 +773,6 @@ nav .menus {
   gap: 4em;
   flex-grow: 3;
   justify-content: center;
-
 }
 
 nav .menu {
@@ -815,7 +814,7 @@ nav .menus.portrait .menu {
 
 nav .menus.portrait .fab,
 nav .menus.portrait a {
-  background-color: var(--color-white);
+  /* background-color: var(--color-white); */
 }
 
 nav .fab,
@@ -831,6 +830,7 @@ nav .menu a {
   text-transform: uppercase;
   background-color: var(--color-white-alpha);
   transition: all 0.15s ease-out;
+  backdrop-filter: blur(6px);
 }
 
 nav .fab:hover,
@@ -853,6 +853,7 @@ nav .logos {
   align-self: flex-start;
   transition: all 0.15s ease-out;
   flex-wrap: nowrap;
+  backdrop-filter: blur(6px);
 }
 
 nav .logos:hover {
